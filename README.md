@@ -140,15 +140,16 @@ Any static assets, like images, can be placed in the `public/` directory if they
 
 All commands are run from the root of the project, from a terminal:
 
-| Command               | Action                                             |
-| :-------------------- | :------------------------------------------------- |
-| `npm install`         | Installs dependencies                              |
-| `npm run dev`         | Starts local dev server at `localhost:3000`        |
-| `npm run build`       | Build your production site to `./dist/`            |
-| `npm run preview`     | Preview your build locally, before deploying       |
-| `npm run format`      | Format codes with Prettier                         |
-| `npm run lint:eslint` | Run Eslint                                         |
-| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
+| Command                   | Action                                             |
+| :------------------------ | :------------------------------------------------- |
+| `npm install`             | Installs dependencies                              |
+| `npm run toolbar:disable` | Disable astro toolbar                              |
+| `npm run dev`             | Starts local dev server at `localhost:3000`        |
+| `npm run build`           | Build your production site to `./dist/`            |
+| `npm run preview`         | Preview your build locally, before deploying       |
+| `npm run format`          | Format codes with Prettier                         |
+| `npm run lint:eslint`     | Run Eslint                                         |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro preview` |
 
 <br>
 
@@ -247,6 +248,7 @@ To customize Font families, Colors or more Elements refer to the following files
 You can create an optimized production build with:
 
 ```shell
+npm run toolbar:disable
 npm run build
 ```
 
