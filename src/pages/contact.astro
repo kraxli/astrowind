@@ -12,12 +12,13 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <!-- <HeroText tagline="Contact" title="Let's Connect!" /> -->
+  <HeroText tagline="" title="Let's Connect!" />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Send uns eine Nachricht!"
+    subtitle=""
     inputs={[
       {
         type: 'text',
@@ -31,17 +32,18 @@ const metadata = {
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Nachricht',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+      'Mit dem Absenden dieses Kontaktformulars, erklären Sie sich mit der Erhebung Ihrer personenbezogenen Daten einverstanden.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description=""
   />
 
   <!-- Features2 Widget ************** -->
 
+  {/*
   <Features2
     title="We are here to help!"
     items={[
@@ -76,4 +78,6 @@ const metadata = {
       },
     ]}
   />
+*/}
+
 </Layout>
