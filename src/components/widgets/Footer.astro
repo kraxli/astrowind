@@ -32,7 +32,8 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
     <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
       <div class="col-span-12 lg:col-span-4">
         <div class="mb-2">
-          <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
+          <!-- group: -->
+          <a   class="inline-block font-bold text-xl" href={getHomePermalink()}> <span class="material-icons">&#xE7EF;</span>  {SITE?.name}</a>
         </div>
         <div class="text-sm text-muted flex gap-1">
           {
@@ -72,6 +73,8 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
         ))
       }
     </div>
+    <div class="md:flex md:items-center md:py-8">
+{/*
     <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
       {
         socialLinks?.length ? (
@@ -93,7 +96,7 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
           ''
         )
       }
-
+*/}
       <div class="text-sm mr-4 dark:text-muted">
         <Fragment set:html={footNote} />
       </div>
